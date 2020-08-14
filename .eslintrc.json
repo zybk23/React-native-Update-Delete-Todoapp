@@ -1,0 +1,27 @@
+{
+	"env": {
+		"es6": true,
+		"browser": true,
+		"node": true,
+		"jest": true
+	},
+	"parser": "babel-eslint",
+	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:react-native/all"],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+	"plugins": ["react", "react-native"],
+	"rules": {
+		"linebreak-style": ["error", "unix", "windows"],
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"no-var": ["error"],
+		"eqeqeq": ["error"]
+	},
+	"globals": {
+		"fetch": true
+	}
+}
